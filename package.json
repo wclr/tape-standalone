@@ -1,0 +1,30 @@
+{
+  "name": "tape-standalone",
+  "version": "4.4.0",
+  "description": "Standalone (browserfied) verson of tape.js test runner",
+  "keywords": [
+    "assert",
+    "browser",
+    "harness",
+    "tap",
+	"tape",
+    "test"
+  ],  
+  "main": "tape.js",
+  "files": [
+	"tape.js"
+  ],
+  "scripts": {
+    "make": "browserify node_modules/tape -o tape.js -s test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  },
+  "system": {
+	"map": {
+		"tape": "tape-standalone"
+	}
+  }
+}
